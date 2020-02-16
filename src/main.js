@@ -1,5 +1,20 @@
 import Vue from "vue";
-import { Button, Layout, Menu, Icon, Divider, Input, List, Avatar, Row, Col, Card, Calendar, Collapse, Carousel } from "ant-design-vue";
+import {
+  Button,
+  Layout,
+  Menu,
+  Icon,
+  Divider,
+  Input,
+  List,
+  Avatar,
+  Row,
+  Col,
+  Card,
+  Calendar,
+  Collapse,
+  Carousel
+} from "ant-design-vue";
 import App from "./App";
 import router from "./router";
 import VueCookies from "vue-cookies";

@@ -69,6 +69,30 @@ export default [
     ]
   },
   {
+    path: "/d3",
+    name: "d3",
+    text: "暗黑3",
+    menu: true,
+    component: () => import("@/views/d3"),
+    children: [
+      {
+        path: "/d3",
+        redirect: "/d3/query",
+        menu: false
+      },
+      {
+        path: "/d3/query",
+        name: "query",
+        text: "暗黑3数据库",
+        menu: true,
+        component: () => import("@/views/d3/Query"),
+        meta: {
+          title: "暗黑3数据库"
+        }
+      }
+    ]
+  },
+  {
     path: "/todo",
     name: "todo",
     text: "TODO",

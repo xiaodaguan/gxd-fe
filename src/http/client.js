@@ -42,4 +42,19 @@ function login(name, pwd) {
     method: "POST"
   }).then(r => r.json());
 }
-export { fetchDemo, getPosts, getPost, getIpInfo, validateToken, login };
+
+function queryD3Equip(kw) {
+  return fetch("http://localhost:8081/api/v1/d3/query/equip/" + kw)
+    .then(r => r.json())
+    .then(j => j.data);
+}
+
+export {
+  fetchDemo,
+  getPosts,
+  getPost,
+  getIpInfo,
+  validateToken,
+  login,
+  queryD3Equip
+};

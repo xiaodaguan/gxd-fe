@@ -10,6 +10,7 @@
   "dependencies": {
     "ant-design-vue": "^1.4.10",
     "core-js": "^3.4.4",
+    "element-ui": "^2.13.0",
     "less": "^3.10.3",
     "v-jsoneditor": "^1.2.3",
     "vue": "^2.6.10",
