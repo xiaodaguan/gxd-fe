@@ -35,7 +35,6 @@ function getWeather(cityId) {
 
 function validateToken(token) {
     var url = "http://guanxiaoda.cn:8081/sys/user/validate/" + token;
-    console.log(url);
     return fetch(url)
         .then(r => {
             return r.json();
