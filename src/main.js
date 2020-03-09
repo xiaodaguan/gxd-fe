@@ -1,24 +1,25 @@
 import Vue from "vue";
 import {
-  Button,
-  Layout,
-  Menu,
-  Icon,
-  Divider,
-  Input,
-  List,
-  Avatar,
-  Row,
-  Col,
-  Card,
-  Calendar,
-  Collapse,
-  Carousel
+    Button,
+    Layout,
+    Menu,
+    Icon,
+    Divider,
+    Input,
+    List,
+    Avatar,
+    Row,
+    Col,
+    Card,
+    Calendar,
+    Collapse,
+    Carousel,
+    Timeline
 } from "ant-design-vue";
 import App from "./App";
 import router from "./router";
 import VueCookies from "vue-cookies";
-
+import "moment/locale/zh-cn";
 Vue.config.productionTip = false;
 
 Vue.use(Button);
@@ -36,8 +37,9 @@ Vue.use(Collapse);
 Vue.use(Carousel);
 Vue.use(VueCookies);
 Vue.use(Input);
+Vue.use(Timeline);
 
 new Vue({
-  render: h => h(App),
-  router
+    render: h => h(App),
+    router
 }).$mount("#app");
