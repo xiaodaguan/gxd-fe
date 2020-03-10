@@ -57,7 +57,7 @@ function login(name, pwd) {
 }
 
 function queryD3Equip(kw) {
-    return fetch("http://guanxiaoda:8081/api/v1/d3/query/equip/" + kw)
+    return fetch("http://guanxiaoda.cn:8081/api/v1/d3/query/equip/" + kw)
         .then(r => r.json())
         .then(j => j.data);
 }
