@@ -1,4 +1,4 @@
-const baseUrl = location.hostname.indexOf("guanxiaodade") > 0 ? "http://guanxiaoda.cn:8081" : "http://localhost:8081";
+const baseUrl = process.env.NODE_ENV == 'dev' ? "http://localhost:8081" : "http://guanxiaoda.cn:8081";
 
 function fetchDemo() {
     return fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
@@ -69,7 +69,6 @@ function getBingWallpaper() {
     return fetch(baseUrl + "/api/v1/wp/get").then(r => r.json()).then(res => res.data);
 }
 
-console.log(baseUrl);
 
 export {
     fetchDemo,
