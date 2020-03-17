@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>文章列表</h1>
     <post-list></post-list>
   </div>
 </template>

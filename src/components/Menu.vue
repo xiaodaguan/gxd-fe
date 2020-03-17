@@ -78,7 +78,7 @@
                 if (!token) {
                     return;
                 }
-                validateToken(token).then(s => (this.auth = s));
+                validateToken(token).then(r => (this.auth = r.success));
             },
             logout() {
                 this.$cookies.remove("token");
